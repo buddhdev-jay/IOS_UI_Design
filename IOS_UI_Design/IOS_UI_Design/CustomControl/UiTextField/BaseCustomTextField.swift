@@ -11,7 +11,7 @@ import UIKit
 class BaseCustomTextField : UITextField {
     
     // MARK: - variables
-    private var textPadding = UIEdgeInsets(top: CGFloat(Constants.TWEVLE), left: Constants.THIRTEENPOINTTWENTYNINE, bottom: CGFloat(Constants.TWEVLE), right: Constants.THIRTEENPOINTTWENTYNINE)
+    private var textPadding = UIEdgeInsets(top: CGFloat(Constants.TWEVLE), left: CGFloat(Constants.THIRTEENPOINTTWENTYNINE), bottom: CGFloat(Constants.TWEVLE), right: CGFloat(Constants.THIRTEENPOINTTWENTYNINE))
     private let imageIcon = UIButton()
     
     //It is called whenever textfield is added programatically
@@ -35,6 +35,7 @@ class BaseCustomTextField : UITextField {
     override func editingRect(forBounds bounds: CGRect) -> CGRect {
         return super.editingRect(forBounds: bounds).inset(by: textPadding)
     }
+    
     override func becomeFirstResponder() -> Bool {
         self.layer.borderColor = UIColor.greenColor.cgColor
         return super.becomeFirstResponder()
@@ -64,7 +65,7 @@ extension BaseCustomTextField {
 // MARK: - setup Button
 extension BaseCustomTextField {
     
-    func setUpButton(){
+    func setUpButton() {
         imageIcon.addTarget(self, action: #selector(self.toggle), for: .touchUpInside)
         let contentView = UIView()
         contentView.addSubview(imageIcon)
@@ -118,7 +119,7 @@ extension BaseCustomTextField {
 extension BaseCustomTextField {
     
     func getImageContainerView(leftpadding:Double,rightPadding:Double,image:String) -> UIView {
-        let imageView = UIImageView(frame: CGRect(x: leftpadding, y: rightPadding, width: 25, height: 25))
+        let imageView = UIImageView(frame: CGRect(x: leftpadding, y: rightPadding, width: Double(Constants.TWENTYFIVE), height: Double(Constants.TWENTYFIVE)))
         if let imageSystem = UIImage(systemName: image) {
             imageView.image = imageSystem
         } else {

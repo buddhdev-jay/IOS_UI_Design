@@ -10,16 +10,13 @@ import UIKit
 
 class RegistrationUILabel : UILabel {
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        setup()
-    }
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         setup()
     }
+    
     func setup(){
         self.text = Constants.registerationLabel
-        self.font = UIFont.init(name: Fonts.poppinsSemiBold.rawValue, size: CGFloat(Constants.TWENTYFOUR))
+        self.font = UIFont.init(name: Fonts.poppinsBold.rawValue, size: CGFloat(Constants.TWENTYFOUR))
     }
 }

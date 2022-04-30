@@ -14,6 +14,7 @@ class RegistrationViewController: UIViewController {
     @IBOutlet weak var PasswordTextField: PasswordTextField!
     @IBOutlet weak var emailTextFiled: EmailTextField!
     @IBOutlet weak var userNameTextField: UserNameTextFiled!
+    @IBOutlet weak var scrollView: UIScrollView!
     
     // MARK: - View Lifecycle
     override func viewDidLoad() {
@@ -23,6 +24,8 @@ class RegistrationViewController: UIViewController {
         PasswordTextField.delegate = self
         emailTextFiled.delegate = self
         userNameTextField.delegate = self
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name:UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name:UIResponder.keyboardWillHideNotification, object: nil)
     }
 }
 
@@ -34,9 +37,6 @@ extension RegistrationViewController {
         alert(customMessage:Constants.registerButtonClicked )
     }
     
-    @IBAction func onClickLogin(_ sender: Any) {
-        alert(customMessage:Constants.loginButtonClicked )
-    }
     
     @IBAction func onClickofAppleButton(_ sender: UIButton) {
         alert(customMessage:Constants.appleButtonClicked)
@@ -48,6 +48,12 @@ extension RegistrationViewController {
     
     @IBAction func onClickofFacebookButton(_ sender: UIButton) {
         alert(customMessage:Constants.facebookbuttonClcked)
+    }
+    
+    @IBAction func onClickLogin(_ sender: Any) {
+        if let loginvc = UIStoryboard(name: Constants.mainStoryboard, bundle: nil).instantiateViewController(withIdentifier: Constants.loginVC) as? LoginViewController {
+            self.navigationController?.pushViewController(loginvc, animated: true)
+        }
     }
     
 }
@@ -67,9 +73,28 @@ extension RegistrationViewController {
     
 }
 
+extension RegistrationViewController {
+    
+    @objc fileprivate func keyboardWillShow(notification:NSNotification) {
+        guard let userInfo = notification.userInfo else { return }
+        var keyboardFrame:CGRect = (userInfo[UIResponder.keyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue
+        keyboardFrame = self.view.convert(keyboardFrame, from: nil)
+        var contentInset:UIEdgeInsets = self.scrollView.contentInset
+        contentInset.bottom = keyboardFrame.size.height + CGFloat(Constants.TWENTY)
+        scrollView.contentInset = contentInset
+    }
+    
+    @objc fileprivate func keyboardWillHide(notification:NSNotification) {
+        let contentInset:UIEdgeInsets = UIEdgeInsets.zero
+        scrollView.contentInset = contentInset
+    }
+    
+}
+
+
 // MARK: - UITextFieldDelegate
 extension RegistrationViewController: UITextFieldDelegate {
-    
+
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         switch textField {
         case userNameTextField :
@@ -85,5 +110,5 @@ extension RegistrationViewController: UITextFieldDelegate {
         }
         return true
     }
-    
+
 }
