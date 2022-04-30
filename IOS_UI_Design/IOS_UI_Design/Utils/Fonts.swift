@@ -10,4 +10,5 @@ import Foundation
 enum Fonts : String {
     case poppinsBold = "PoppinsBold"
     case poppinsRegular = "PoppinsRegular"
+    case poppinsSemiBold = "PoppinsSemiBold"
 }

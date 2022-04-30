@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8117462E28230552008C0B0F /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8117462D28230552008C0B0F /* Constant.swift */; };
 		816964FE281D534E00BBD6B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816964FD281D534E00BBD6B5 /* AppDelegate.swift */; };
 		81696500281D534E00BBD6B5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816964FF281D534E00BBD6B5 /* SceneDelegate.swift */; };
 		81696502281D534E00BBD6B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81696501281D534E00BBD6B5 /* ViewController.swift */; };
@@ -24,9 +23,17 @@
 		81D72283281D59D300403AA9 /* BaseCustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D72282281D59D300403AA9 /* BaseCustomTextField.swift */; };
 		81D72286281D912D00403AA9 /* BaseCutomUiButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D72285281D912D00403AA9 /* BaseCutomUiButton.swift */; };
 		81D72288281D91D000403AA9 /* RegisterUiButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D72287281D91D000403AA9 /* RegisterUiButton.swift */; };
+		FB5C88BE2836437E002C4A1A /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5C88BD2836437E002C4A1A /* Fonts.swift */; };
+		FB5E2559282100260030D152 /* LoginUiButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5E2558282100260030D152 /* LoginUiButton.swift */; };
+		FB5E255C282104290030D152 /* CircularStdRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FB5E255B282104250030D152 /* CircularStdRegular.ttf */; };
+		FB7C3B1F28201959004059E7 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7C3B1E28201959004059E7 /* RegistrationViewController.swift */; };
+		FB7C3B21282019AA004059E7 /* ViewController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7C3B20282019AA004059E7 /* ViewController+extension.swift */; };
 		FBA3D5BF281FD24C002F5076 /* PoppinsBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FBA3D5AC281FD24B002F5076 /* PoppinsBold.ttf */; };
 		FBA3D5C0281FD24C002F5076 /* PoppinsRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FBA3D5AD281FD24B002F5076 /* PoppinsRegular.ttf */; };
-		FBAFAE6E282A2C4900C4AABB /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAFAE6D282A2C4900C4AABB /* Fonts.swift */; };
+		FBA3D5CE281FDC79002F5076 /* RegistrationUILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA3D5CD281FDC79002F5076 /* RegistrationUILabel.swift */; };
+		FBA3D5D1281FE73C002F5076 /* RegisterTagLineUILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA3D5D0281FE73C002F5076 /* RegisterTagLineUILabel.swift */; };
+		FBA3D5D2281FE846002F5076 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FBA3D5CF281FDCE9002F5076 /* Poppins-SemiBold.ttf */; };
+		FBFCE15728238300004818F7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFCE15628238300004818F7 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +54,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8117462D28230552008C0B0F /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		816964FA281D534E00BBD6B5 /* IOS_UI_Design.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOS_UI_Design.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		816964FD281D534E00BBD6B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		816964FF281D534E00BBD6B5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,9 +74,17 @@
 		81D72282281D59D300403AA9 /* BaseCustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCustomTextField.swift; sourceTree = "<group>"; };
 		81D72285281D912D00403AA9 /* BaseCutomUiButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCutomUiButton.swift; sourceTree = "<group>"; };
 		81D72287281D91D000403AA9 /* RegisterUiButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUiButton.swift; sourceTree = "<group>"; };
+		FB5C88BD2836437E002C4A1A /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Fonts.swift; path = IOS_UI_Design/Utils/Fonts.swift; sourceTree = "<group>"; };
+		FB5E2558282100260030D152 /* LoginUiButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUiButton.swift; sourceTree = "<group>"; };
+		FB5E255B282104250030D152 /* CircularStdRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = CircularStdRegular.ttf; path = "Fonts/Circular Std/CircularStdRegular.ttf"; sourceTree = SOURCE_ROOT; };
+		FB7C3B1E28201959004059E7 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		FB7C3B20282019AA004059E7 /* ViewController+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+extension.swift"; sourceTree = "<group>"; };
 		FBA3D5AC281FD24B002F5076 /* PoppinsBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PoppinsBold.ttf; sourceTree = "<group>"; };
 		FBA3D5AD281FD24B002F5076 /* PoppinsRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PoppinsRegular.ttf; sourceTree = "<group>"; };
-		FBAFAE6D282A2C4900C4AABB /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		FBA3D5CD281FDC79002F5076 /* RegistrationUILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationUILabel.swift; sourceTree = "<group>"; };
+		FBA3D5CF281FDCE9002F5076 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		FBA3D5D0281FE73C002F5076 /* RegisterTagLineUILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterTagLineUILabel.swift; sourceTree = "<group>"; };
+		FBFCE15628238300004818F7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = IOS_UI_Design/CustomControl/UIButton/Constants.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,8 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				8158D199281DBEA000851E89 /* Fonts */,
-				8117462D28230552008C0B0F /* Constant.swift */,
-				FBAFAE6D282A2C4900C4AABB /* Fonts.swift */,
+				FBFCE15628238300004818F7 /* Constants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -111,6 +124,7 @@
 		8158D199281DBEA000851E89 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				FB5E255A282104130030D152 /* Circular Std */,
 				FBA3D5A5281FD24B002F5076 /* Poppins */,
 			);
 			path = Fonts;
@@ -120,6 +134,7 @@
 		816964F1281D534E00BBD6B5 = {
 			isa = PBXGroup;
 			children = (
+				FB5C88BD2836437E002C4A1A /* Fonts.swift */,
 				816964FC281D534E00BBD6B5 /* IOS_UI_Design */,
 				81696513281D534F00BBD6B5 /* IOS_UI_DesignTests */,
 				8169651D281D534F00BBD6B5 /* IOS_UI_DesignUITests */,
@@ -150,6 +165,8 @@
 				81696508281D534E00BBD6B5 /* LaunchScreen.storyboard */,
 				8169650B281D534E00BBD6B5 /* Info.plist */,
 				81D7227E281D55E200403AA9 /* ColorFile.swift */,
+				FB7C3B1E28201959004059E7 /* RegistrationViewController.swift */,
+				FB7C3B20282019AA004059E7 /* ViewController+extension.swift */,
 			);
 			path = IOS_UI_Design;
 			sourceTree = "<group>";
@@ -174,6 +191,7 @@
 		81D72280281D568800403AA9 /* CustomControl */ = {
 			isa = PBXGroup;
 			children = (
+				FBA3D5CC281FDC51002F5076 /* UILabel */,
 				81D72284281D90F100403AA9 /* UIButton */,
 				81D72281281D56AF00403AA9 /* UiTextField */,
 			);
@@ -196,19 +214,38 @@
 			children = (
 				81D72285281D912D00403AA9 /* BaseCutomUiButton.swift */,
 				81D72287281D91D000403AA9 /* RegisterUiButton.swift */,
+				FB5E2558282100260030D152 /* LoginUiButton.swift */,
 			);
 			path = UIButton;
+			sourceTree = "<group>";
+		};
+		FB5E255A282104130030D152 /* Circular Std */ = {
+			isa = PBXGroup;
+			children = (
+				FB5E255B282104250030D152 /* CircularStdRegular.ttf */,
+			);
+			path = "Circular Std";
 			sourceTree = "<group>";
 		};
 		FBA3D5A5281FD24B002F5076 /* Poppins */ = {
 			isa = PBXGroup;
 			children = (
+				FBA3D5CF281FDCE9002F5076 /* Poppins-SemiBold.ttf */,
 				FBA3D5AC281FD24B002F5076 /* PoppinsBold.ttf */,
 				FBA3D5AD281FD24B002F5076 /* PoppinsRegular.ttf */,
 			);
 			name = Poppins;
 			path = Fonts/Poppins;
 			sourceTree = SOURCE_ROOT;
+		};
+		FBA3D5CC281FDC51002F5076 /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				FBA3D5CD281FDC79002F5076 /* RegistrationUILabel.swift */,
+				FBA3D5D0281FE73C002F5076 /* RegisterTagLineUILabel.swift */,
+			);
+			path = UILabel;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -314,7 +351,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB5E255C282104290030D152 /* CircularStdRegular.ttf in Resources */,
 				FBA3D5C0281FD24C002F5076 /* PoppinsRegular.ttf in Resources */,
+				FBA3D5D2281FE846002F5076 /* Poppins-SemiBold.ttf in Resources */,
 				8169650A281D534E00BBD6B5 /* LaunchScreen.storyboard in Resources */,
 				81696507281D534E00BBD6B5 /* Assets.xcassets in Resources */,
 				81696505281D534E00BBD6B5 /* Main.storyboard in Resources */,
@@ -343,17 +382,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB5C88BE2836437E002C4A1A /* Fonts.swift in Sources */,
 				81D72283281D59D300403AA9 /* BaseCustomTextField.swift in Sources */,
 				81948236281E6C7C00118217 /* UserNameTextField.swift in Sources */,
 				81D72288281D91D000403AA9 /* RegisterUiButton.swift in Sources */,
 				81696502281D534E00BBD6B5 /* ViewController.swift in Sources */,
-				FBAFAE6E282A2C4900C4AABB /* Fonts.swift in Sources */,
+				FB7C3B21282019AA004059E7 /* ViewController+extension.swift in Sources */,
+				FB7C3B1F28201959004059E7 /* RegistrationViewController.swift in Sources */,
 				81D7227F281D55E200403AA9 /* ColorFile.swift in Sources */,
+				FBFCE15728238300004818F7 /* Constants.swift in Sources */,
 				816964FE281D534E00BBD6B5 /* AppDelegate.swift in Sources */,
+				FBA3D5CE281FDC79002F5076 /* RegistrationUILabel.swift in Sources */,
 				81948234281E6AAD00118217 /* EmailTextField.swift in Sources */,
 				81696500281D534E00BBD6B5 /* SceneDelegate.swift in Sources */,
-				8117462E28230552008C0B0F /* Constant.swift in Sources */,
 				81948232281E641200118217 /* PasswordTextField.swift in Sources */,
+				FB5E2559282100260030D152 /* LoginUiButton.swift in Sources */,
+				FBA3D5D1281FE73C002F5076 /* RegisterTagLineUILabel.swift in Sources */,
 				81D72286281D912D00403AA9 /* BaseCutomUiButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
