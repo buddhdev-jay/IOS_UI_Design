@@ -15,11 +15,13 @@ class LoginTagLineUILabel : UILabel {
         super.init(frame: frame)
         setup()
     }
+    
     //It is called whenever textfield is added through Storyboard
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         setup()
     }
+    
     func setup() {
         self.text = "Let’s log in. Apply to jobs!"
         self.font = UIFont.init(name: "PoppinsRegular", size: 14)

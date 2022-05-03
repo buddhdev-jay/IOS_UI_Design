@@ -65,6 +65,7 @@ extension BaseCustomTextField {
 
 // MARK: - setup Button
 extension BaseCustomTextField {
+    
     func setUpButton(){
         imageIcon.addTarget(self, action: #selector(self.toggle), for: .touchUpInside)
         let contentView = UIView()
@@ -82,10 +83,12 @@ extension BaseCustomTextField {
         imageIcon.isSelected = true
         imageIcon.setImage(UIImage(named: "passwordeye_close")!, for: .normal)
     }
+    
 }
 
 // MARK: - Get ImageContainer
 extension BaseCustomTextField {
+    
     func getImageContainerView(leftpadding:Double,rightPadding:Double,image:String) -> UIView {
         let imageView = UIImageView(frame: CGRect(x: leftpadding, y: rightPadding, width: 25, height: 25))
         if let imageSystem = UIImage(systemName: image) {
@@ -102,6 +105,7 @@ extension BaseCustomTextField {
 
 // MARK: - Password Toggle
 extension BaseCustomTextField {
+    
     @objc func toggle(_ sender: UIButton) {
         if(sender.isSelected) {
             sender.isSelected = !sender.isSelected
@@ -121,7 +125,8 @@ extension BaseCustomTextField {
 
 // MARK: - Image Setup
 extension BaseCustomTextField {
-    func setUpImage(leftImage:String? = nil,rightImage:String? = nil){
+    
+    func setUpImage(leftImage:String? = nil,rightImage:String? = nil) {
         //Left Image
         if let leftImage = leftImage {
             leftView = getImageContainerView(leftpadding: 27.17, rightPadding: 5, image: leftImage)
@@ -133,6 +138,7 @@ extension BaseCustomTextField {
             rightViewMode = .always
         }
     }
+    
 }
 
 // MARK: - UITextFieldDelegate

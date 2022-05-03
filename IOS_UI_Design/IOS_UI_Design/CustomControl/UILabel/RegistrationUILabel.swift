@@ -15,10 +15,12 @@ class RegistrationUILabel : UILabel {
         super.init(frame: frame)
         setup()
     }
+    
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         setup()
     }
+    
     func setup(){
         self.text = "Registration👍"
         self.font = UIFont.init(name: "Poppins-SemiBold", size: 24)

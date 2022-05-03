@@ -24,11 +24,11 @@ class LoginViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
-
 }
 
 // MARK: - Outlet Actions
 extension LoginViewController {
+    
     @IBAction func onClickRegisterButton(_ sender: Any) {
         alert(customMessage: "Register Link Clicked")
     }
@@ -42,10 +42,12 @@ extension LoginViewController {
     @IBAction func onClickForgetPassword(_ sender: UIButton) {
         alert(customMessage: "Forget Password Clicked")
     }
+    
 }
 
 // MARK: - Hide Keyboard
 extension LoginViewController {
+    
     func hideKeyboardWhenTappedAround() {
             let tap = UITapGestureRecognizer(target: self, action: #selector(LoginViewController.dismissKeyboard))
             tap.cancelsTouchesInView = false
@@ -58,6 +60,7 @@ extension LoginViewController {
 }
 
 extension LoginViewController {
+    
     @objc fileprivate func keyboardWillShow(notification:NSNotification) {
         guard let userInfo = notification.userInfo else { return }
         var keyboardFrame:CGRect = (userInfo[UIResponder.keyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue
@@ -75,6 +78,7 @@ extension LoginViewController {
 
 // MARK: - UITextFieldDelegate
 extension LoginViewController: UITextFieldDelegate {
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         switch textField {
         case emailTextField :
@@ -86,4 +90,5 @@ extension LoginViewController: UITextFieldDelegate {
         }
         return true
     }
+    
 }

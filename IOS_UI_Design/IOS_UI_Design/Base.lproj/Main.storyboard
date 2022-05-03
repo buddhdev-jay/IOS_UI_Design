@@ -316,7 +316,6 @@
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7i1-lx-ELq" customClass="EmailTextField" customModule="IOS_UI_Design" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="327" height="54"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="327" id="5Ml-UY-22C"/>
                                                             <constraint firstAttribute="height" constant="54" id="e25-Yb-n8Q"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -332,7 +331,6 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qpB-Lc-R14" customClass="LoginUiButton" customModule="IOS_UI_Design" customModuleProvider="target">
                                                 <rect key="frame" x="24" y="331.33333333333331" width="327" height="57"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="327" id="eaZ-sI-32H"/>
                                                     <constraint firstAttribute="height" constant="57" id="ejA-ZI-XBj"/>
                                                 </constraints>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
