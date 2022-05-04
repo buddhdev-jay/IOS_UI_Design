@@ -13,16 +13,16 @@ class RegistrationUILabel : UILabel {
     //It is called whenever textfield is added programatically
     override init(frame: CGRect) {
         super.init(frame: frame)
-        setup()
+        setupRegistrationUILabel()
     }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-        setup()
+        setupRegistrationUILabel()
     }
     
-    func setup(){
+    func setupRegistrationUILabel(){
         self.text = "Registration👍"
-        self.font = UIFont.init(name: "Poppins-SemiBold", size: 24)
+        self.font = UIFont.init(name: "Poppins-SemiBold", size: CGFloat(Constants.TWENTYFOUR))
     }
 }

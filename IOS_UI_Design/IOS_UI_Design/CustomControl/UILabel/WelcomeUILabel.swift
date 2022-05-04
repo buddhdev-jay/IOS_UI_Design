@@ -24,7 +24,7 @@ class WelcomeUILabel : UILabel {
     
     func setup() {
         self.text = "Welcome Back 👋"
-        self.font = UIFont.init(name: "Poppins-SemiBold", size: 24)
+        self.font = UIFont.init(name: "Poppins-SemiBold", size: CGFloat(Constants.TWENTYFOUR))
     }
     
 }

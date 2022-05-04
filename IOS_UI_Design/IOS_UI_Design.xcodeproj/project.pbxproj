@@ -30,6 +30,8 @@
 		FB5E255C282104290030D152 /* CircularStdRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FB5E255B282104250030D152 /* CircularStdRegular.ttf */; };
 		FB7C3B1F28201959004059E7 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7C3B1E28201959004059E7 /* RegistrationViewController.swift */; };
 		FB7C3B21282019AA004059E7 /* ViewController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7C3B20282019AA004059E7 /* ViewController+extension.swift */; };
+		FB8C61762822374C0049D827 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8C61752822374C0049D827 /* Constants.swift */; };
+		FB8C6178282239430049D827 /* BaseCustomUILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8C6177282239430049D827 /* BaseCustomUILabel.swift */; };
 		FBA3D5BF281FD24C002F5076 /* PoppinsBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FBA3D5AC281FD24B002F5076 /* PoppinsBold.ttf */; };
 		FBA3D5C0281FD24C002F5076 /* PoppinsRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FBA3D5AD281FD24B002F5076 /* PoppinsRegular.ttf */; };
 		FBA3D5CE281FDC79002F5076 /* RegistrationUILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA3D5CD281FDC79002F5076 /* RegistrationUILabel.swift */; };
@@ -82,6 +84,8 @@
 		FB5E255B282104250030D152 /* CircularStdRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = CircularStdRegular.ttf; path = "Fonts/Circular Std/CircularStdRegular.ttf"; sourceTree = SOURCE_ROOT; };
 		FB7C3B1E28201959004059E7 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		FB7C3B20282019AA004059E7 /* ViewController+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+extension.swift"; sourceTree = "<group>"; };
+		FB8C61752822374C0049D827 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = IOS_UI_Design/Constants.swift; sourceTree = SOURCE_ROOT; };
+		FB8C6177282239430049D827 /* BaseCustomUILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCustomUILabel.swift; sourceTree = "<group>"; };
 		FBA3D5AC281FD24B002F5076 /* PoppinsBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PoppinsBold.ttf; sourceTree = "<group>"; };
 		FBA3D5AD281FD24B002F5076 /* PoppinsRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PoppinsRegular.ttf; sourceTree = "<group>"; };
 		FBA3D5CD281FDC79002F5076 /* RegistrationUILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationUILabel.swift; sourceTree = "<group>"; };
@@ -118,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				8158D199281DBEA000851E89 /* Fonts */,
+				FB8C61752822374C0049D827 /* Constants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -246,6 +251,7 @@
 				FBA3D5D0281FE73C002F5076 /* RegisterTagLineUILabel.swift */,
 				FB3D6331282128AC00411677 /* WelcomeUILabel.swift */,
 				FB3D63332821296800411677 /* LoginTagLineUILabel.swift */,
+				FB8C6177282239430049D827 /* BaseCustomUILabel.swift */,
 			);
 			path = UILabel;
 			sourceTree = "<group>";
@@ -386,10 +392,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB3D633628212D4700411677 /* LoginViewController.swift in Sources */,
+				FB8C61762822374C0049D827 /* Constants.swift in Sources */,
 				81D72283281D59D300403AA9 /* BaseCustomTextField.swift in Sources */,
 				81948236281E6C7C00118217 /* UserNameTextField.swift in Sources */,
 				81D72288281D91D000403AA9 /* RegisterUiButton.swift in Sources */,
 				81696502281D534E00BBD6B5 /* ViewController.swift in Sources */,
+				FB8C6178282239430049D827 /* BaseCustomUILabel.swift in Sources */,
 				FB7C3B21282019AA004059E7 /* ViewController+extension.swift in Sources */,
 				FB7C3B1F28201959004059E7 /* RegistrationViewController.swift in Sources */,
 				81D7227F281D55E200403AA9 /* ColorFile.swift in Sources */,

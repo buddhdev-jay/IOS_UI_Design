@@ -8,23 +8,23 @@
 import Foundation
 import UIKit
 
-class LoginTagLineUILabel : UILabel {
+class LoginTagLineUILabel : BaseCustomUILabel {
     
     //It is called whenever textfield is added programatically
     override init(frame: CGRect) {
         super.init(frame: frame)
-        setup()
+        setupLoginTagLineUILabel()
     }
     
     //It is called whenever textfield is added through Storyboard
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-        setup()
+        setupLoginTagLineUILabel()
     }
     
-    func setup() {
+    func setupLoginTagLineUILabel() {
         self.text = "Let’s log in. Apply to jobs!"
-        self.font = UIFont.init(name: "PoppinsRegular", size: 14)
+        self.font = UIFont.init(name: "PoppinsRegular", size: CGFloat(Constants.FOURTEEN))
         self.textColor = UIColor.gray
     }
 }
