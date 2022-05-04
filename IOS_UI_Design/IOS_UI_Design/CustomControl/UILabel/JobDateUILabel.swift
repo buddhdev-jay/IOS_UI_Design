@@ -22,7 +22,7 @@ class JobDateUILabel : BaseCustomUILabel {
         JobDateUILabel()
     }
     
-    func JobTagUILabel() {
+    func JobDateUILabel() {
         self.font = UIFont.init(name: "PoppinsRegular", size: 13)
         self.textColor = UIColor.gray
     }
