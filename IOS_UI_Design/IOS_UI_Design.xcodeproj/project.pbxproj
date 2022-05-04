@@ -36,6 +36,20 @@
 		FB7C3B21282019AA004059E7 /* ViewController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7C3B20282019AA004059E7 /* ViewController+extension.swift */; };
 		FB8C61762822374C0049D827 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8C61752822374C0049D827 /* Constants.swift */; };
 		FB8C6178282239430049D827 /* BaseCustomUILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8C6177282239430049D827 /* BaseCustomUILabel.swift */; };
+		FB9602B228227CE800C0490E /* OnBoardingStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB9602B128227CE800C0490E /* OnBoardingStoryboard.storyboard */; };
+		FB9602B4282280DC00C0490E /* NextUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9602B3282280DC00C0490E /* NextUIButton.swift */; };
+		FB9602B62822851100C0490E /* SkipUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9602B52822851100C0490E /* SkipUIButton.swift */; };
+		FB9602BA2822884400C0490E /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9602B82822884400C0490E /* OnboardingCollectionViewCell.swift */; };
+		FB9602BB2822884400C0490E /* OnboardingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB9602B92822884400C0490E /* OnboardingCollectionViewCell.xib */; };
+		FB9602BD28228D4A00C0490E /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9602BC28228D4A00C0490E /* OnBoardingViewController.swift */; };
+		FB9602BF28228D7500C0490E /* PageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9602BE28228D7500C0490E /* PageModel.swift */; };
+		FB9602C228229F8700C0490E /* ProfileStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB9602C128229F8700C0490E /* ProfileStoryboard.storyboard */; };
+		FB9602C428229F9600C0490E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9602C328229F9600C0490E /* ProfileViewController.swift */; };
+		FB9602C62822A84E00C0490E /* JobTitleUILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9602C52822A84E00C0490E /* JobTitleUILabel.swift */; };
+		FB9602C82822A96700C0490E /* JobTagUILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9602C72822A96700C0490E /* JobTagUILabel.swift */; };
+		FB9602CA2822AA5200C0490E /* JobLocationUILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9602C92822AA5200C0490E /* JobLocationUILabel.swift */; };
+		FB9602CC2822AAF400C0490E /* JobDateUILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9602CB2822AAF400C0490E /* JobDateUILabel.swift */; };
+		FB9602CE2822B2E500C0490E /* RoundedCustomUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9602CD2822B2E500C0490E /* RoundedCustomUIButton.swift */; };
 		FBA3D5BF281FD24C002F5076 /* PoppinsBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FBA3D5AC281FD24B002F5076 /* PoppinsBold.ttf */; };
 		FBA3D5C0281FD24C002F5076 /* PoppinsRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FBA3D5AD281FD24B002F5076 /* PoppinsRegular.ttf */; };
 		FBA3D5CE281FDC79002F5076 /* RegistrationUILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA3D5CD281FDC79002F5076 /* RegistrationUILabel.swift */; };
@@ -94,7 +108,6 @@
 		FB0D428D282253AD001C0964 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/localizable.strings; sourceTree = "<group>"; };
 		FB0D428F28225468001C0964 /* en-IN */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-IN"; path = "en-IN.lproj/Main.strings"; sourceTree = "<group>"; };
 		FB0D429028225496001C0964 /* en-IN */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-IN"; path = "en-IN.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
-		FB0D429128225497001C0964 /* en-IN */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-IN"; path = "en-IN.lproj/localizable.strings"; sourceTree = "<group>"; };
 		FB3D6331282128AC00411677 /* WelcomeUILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeUILabel.swift; sourceTree = "<group>"; };
 		FB3D63332821296800411677 /* LoginTagLineUILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTagLineUILabel.swift; sourceTree = "<group>"; };
 		FB3D633528212D4700411677 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +117,20 @@
 		FB7C3B20282019AA004059E7 /* ViewController+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+extension.swift"; sourceTree = "<group>"; };
 		FB8C61752822374C0049D827 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = IOS_UI_Design/Constants.swift; sourceTree = SOURCE_ROOT; };
 		FB8C6177282239430049D827 /* BaseCustomUILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCustomUILabel.swift; sourceTree = "<group>"; };
+		FB9602B128227CE800C0490E /* OnBoardingStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnBoardingStoryboard.storyboard; sourceTree = "<group>"; };
+		FB9602B3282280DC00C0490E /* NextUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextUIButton.swift; sourceTree = "<group>"; };
+		FB9602B52822851100C0490E /* SkipUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkipUIButton.swift; sourceTree = "<group>"; };
+		FB9602B82822884400C0490E /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
+		FB9602B92822884400C0490E /* OnboardingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingCollectionViewCell.xib; sourceTree = "<group>"; };
+		FB9602BC28228D4A00C0490E /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
+		FB9602BE28228D7500C0490E /* PageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageModel.swift; sourceTree = "<group>"; };
+		FB9602C128229F8700C0490E /* ProfileStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileStoryboard.storyboard; sourceTree = "<group>"; };
+		FB9602C328229F9600C0490E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		FB9602C52822A84E00C0490E /* JobTitleUILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobTitleUILabel.swift; sourceTree = "<group>"; };
+		FB9602C72822A96700C0490E /* JobTagUILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobTagUILabel.swift; sourceTree = "<group>"; };
+		FB9602C92822AA5200C0490E /* JobLocationUILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobLocationUILabel.swift; sourceTree = "<group>"; };
+		FB9602CB2822AAF400C0490E /* JobDateUILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDateUILabel.swift; sourceTree = "<group>"; };
+		FB9602CD2822B2E500C0490E /* RoundedCustomUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCustomUIButton.swift; sourceTree = "<group>"; };
 		FBA3D5AC281FD24B002F5076 /* PoppinsBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PoppinsBold.ttf; sourceTree = "<group>"; };
 		FBA3D5AD281FD24B002F5076 /* PoppinsRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PoppinsRegular.ttf; sourceTree = "<group>"; };
 		FBA3D5CD281FDC79002F5076 /* RegistrationUILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationUILabel.swift; sourceTree = "<group>"; };
@@ -194,6 +221,8 @@
 		816964FC281D534E00BBD6B5 /* IOS_UI_Design */ = {
 			isa = PBXGroup;
 			children = (
+				FB9602C028229F7400C0490E /* Profile */,
+				FB9602B72822880D00C0490E /* OnBoardScreen */,
 				FBDC19CB2822417300E01F7B /* R.generated.swift */,
 				8158D198281DBE9000851E89 /* Utils */,
 				81D72280281D568800403AA9 /* CustomControl */,
@@ -257,6 +286,9 @@
 				81D72285281D912D00403AA9 /* BaseCutomUiButton.swift */,
 				81D72287281D91D000403AA9 /* RegisterUiButton.swift */,
 				FB5E2558282100260030D152 /* LoginUiButton.swift */,
+				FB9602B3282280DC00C0490E /* NextUIButton.swift */,
+				FB9602B52822851100C0490E /* SkipUIButton.swift */,
+				FB9602CD2822B2E500C0490E /* RoundedCustomUIButton.swift */,
 			);
 			path = UIButton;
 			sourceTree = "<group>";
@@ -282,6 +314,27 @@
 			path = "Circular Std";
 			sourceTree = "<group>";
 		};
+		FB9602B72822880D00C0490E /* OnBoardScreen */ = {
+			isa = PBXGroup;
+			children = (
+				FB9602B128227CE800C0490E /* OnBoardingStoryboard.storyboard */,
+				FB9602B82822884400C0490E /* OnboardingCollectionViewCell.swift */,
+				FB9602B92822884400C0490E /* OnboardingCollectionViewCell.xib */,
+				FB9602BC28228D4A00C0490E /* OnBoardingViewController.swift */,
+				FB9602BE28228D7500C0490E /* PageModel.swift */,
+			);
+			path = OnBoardScreen;
+			sourceTree = "<group>";
+		};
+		FB9602C028229F7400C0490E /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				FB9602C128229F8700C0490E /* ProfileStoryboard.storyboard */,
+				FB9602C328229F9600C0490E /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		FBA3D5A5281FD24B002F5076 /* Poppins */ = {
 			isa = PBXGroup;
 			children = (
@@ -301,6 +354,10 @@
 				FB3D6331282128AC00411677 /* WelcomeUILabel.swift */,
 				FB3D63332821296800411677 /* LoginTagLineUILabel.swift */,
 				FB8C6177282239430049D827 /* BaseCustomUILabel.swift */,
+				FB9602C52822A84E00C0490E /* JobTitleUILabel.swift */,
+				FB9602C72822A96700C0490E /* JobTagUILabel.swift */,
+				FB9602C92822AA5200C0490E /* JobLocationUILabel.swift */,
+				FB9602CB2822AAF400C0490E /* JobDateUILabel.swift */,
 			);
 			path = UILabel;
 			sourceTree = "<group>";
@@ -418,7 +475,10 @@
 			files = (
 				FB5E255C282104290030D152 /* CircularStdRegular.ttf in Resources */,
 				FBA3D5C0281FD24C002F5076 /* PoppinsRegular.ttf in Resources */,
+				FB9602C228229F8700C0490E /* ProfileStoryboard.storyboard in Resources */,
+				FB9602B228227CE800C0490E /* OnBoardingStoryboard.storyboard in Resources */,
 				FBA3D5D2281FE846002F5076 /* Poppins-SemiBold.ttf in Resources */,
+				FB9602BB2822884400C0490E /* OnboardingCollectionViewCell.xib in Resources */,
 				8169650A281D534E00BBD6B5 /* LaunchScreen.storyboard in Resources */,
 				81696507281D534E00BBD6B5 /* Assets.xcassets in Resources */,
 				FB0D428C282253AD001C0964 /* localizable.strings in Resources */,
@@ -574,20 +634,31 @@
 				FB8C61762822374C0049D827 /* Constants.swift in Sources */,
 				81D72283281D59D300403AA9 /* BaseCustomTextField.swift in Sources */,
 				81948236281E6C7C00118217 /* UserNameTextField.swift in Sources */,
+				FB9602BD28228D4A00C0490E /* OnBoardingViewController.swift in Sources */,
 				81D72288281D91D000403AA9 /* RegisterUiButton.swift in Sources */,
+				FB9602C428229F9600C0490E /* ProfileViewController.swift in Sources */,
+				FB9602C62822A84E00C0490E /* JobTitleUILabel.swift in Sources */,
 				81696502281D534E00BBD6B5 /* ViewController.swift in Sources */,
+				FB9602CA2822AA5200C0490E /* JobLocationUILabel.swift in Sources */,
 				FB8C6178282239430049D827 /* BaseCustomUILabel.swift in Sources */,
+				FB9602BF28228D7500C0490E /* PageModel.swift in Sources */,
 				FB7C3B21282019AA004059E7 /* ViewController+extension.swift in Sources */,
 				FBDC19CC2822417400E01F7B /* R.generated.swift in Sources */,
+				FB9602B62822851100C0490E /* SkipUIButton.swift in Sources */,
 				FB7C3B1F28201959004059E7 /* RegistrationViewController.swift in Sources */,
+				FB9602CC2822AAF400C0490E /* JobDateUILabel.swift in Sources */,
+				FB9602BA2822884400C0490E /* OnboardingCollectionViewCell.swift in Sources */,
 				81D7227F281D55E200403AA9 /* ColorFile.swift in Sources */,
 				816964FE281D534E00BBD6B5 /* AppDelegate.swift in Sources */,
 				FBA3D5CE281FDC79002F5076 /* RegistrationUILabel.swift in Sources */,
 				FB3D6332282128AC00411677 /* WelcomeUILabel.swift in Sources */,
 				81948234281E6AAD00118217 /* EmailTextField.swift in Sources */,
+				FB9602C82822A96700C0490E /* JobTagUILabel.swift in Sources */,
 				FB3D63342821296800411677 /* LoginTagLineUILabel.swift in Sources */,
 				81696500281D534E00BBD6B5 /* SceneDelegate.swift in Sources */,
 				81948232281E641200118217 /* PasswordTextField.swift in Sources */,
+				FB9602B4282280DC00C0490E /* NextUIButton.swift in Sources */,
+				FB9602CE2822B2E500C0490E /* RoundedCustomUIButton.swift in Sources */,
 				FB5E2559282100260030D152 /* LoginUiButton.swift in Sources */,
 				FBA3D5D1281FE73C002F5076 /* RegisterTagLineUILabel.swift in Sources */,
 				81D72286281D912D00403AA9 /* BaseCutomUiButton.swift in Sources */,
@@ -649,7 +720,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				FB0D428D282253AD001C0964 /* en */,
-				FB0D429128225497001C0964 /* en-IN */,
 			);
 			name = localizable.strings;
 			sourceTree = "<group>";

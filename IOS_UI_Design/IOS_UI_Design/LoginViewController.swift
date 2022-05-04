@@ -33,7 +33,9 @@ extension LoginViewController {
         alert(customMessage: "Register Link Clicked")
     }
     @IBAction func onClickLoginButton(_ sender: Any) {
-        alert(customMessage: "Login Button Clicked")
+        if let onBoardvc = UIStoryboard(name: "ProfileStoryboard", bundle: nil).instantiateViewController(withIdentifier:"profileViewController") as? ProfileViewController {
+            self.navigationController?.pushViewController(onBoardvc, animated: true)
+        }
     }
     
     @IBAction func onClickNavigationBar(_ sender: Any) {
