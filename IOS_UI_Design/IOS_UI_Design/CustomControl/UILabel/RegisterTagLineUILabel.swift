@@ -23,7 +23,7 @@ class RegisterTagLineUILabel : UILabel {
     }
     
     func setup() {
-        self.text = "Let’s Register. Apply to jobs!"
+        self.text = R.string.localizable.registrationTagLine()
         self.font = UIFont.init(name: "PoppinsRegular", size: CGFloat(Constants.TWENTYFOUR))
         self.textColor = UIColor.gray
     }

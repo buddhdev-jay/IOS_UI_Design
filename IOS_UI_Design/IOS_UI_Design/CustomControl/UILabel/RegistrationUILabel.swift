@@ -22,7 +22,7 @@ class RegistrationUILabel : UILabel {
     }
     
     func setupRegistrationUILabel(){
-        self.text = "Registration👍"
+        self.text = R.string.localizable.registrationTextHeader()
         self.font = UIFont.init(name: "Poppins-SemiBold", size: CGFloat(Constants.TWENTYFOUR))
     }
 }

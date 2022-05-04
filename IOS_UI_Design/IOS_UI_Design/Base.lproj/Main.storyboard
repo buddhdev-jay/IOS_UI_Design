@@ -296,10 +296,9 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j3t-sk-hL2" customClass="WelcomeUILabel" customModule="IOS_UI_Design" customModuleProvider="target">
-                                                <rect key="frame" x="24" y="65.333333333333329" width="207" height="34"/>
+                                                <rect key="frame" x="24.000000000000004" y="65.333333333333329" width="41.333333333333343" height="34"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="34" id="WLI-qk-s9C"/>
-                                                    <constraint firstAttribute="width" constant="207" id="hYy-iT-nHN"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>

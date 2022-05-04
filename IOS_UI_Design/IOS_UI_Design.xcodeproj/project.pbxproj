@@ -26,6 +26,7 @@
 		9372DC7AB1044D1F0775EF6B /* Pods_IOS_UI_DesignTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4B11B370E6010CF41C0560B /* Pods_IOS_UI_DesignTests.framework */; };
 		BD383F1AE9FFB7CADB3A168B /* Pods_IOS_UI_Design.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E603C032073C898FBFB68AD /* Pods_IOS_UI_Design.framework */; };
 		E42AC02DABBFF8FCF0389990 /* Pods_IOS_UI_Design_IOS_UI_DesignUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7828374C38F79D3138BB24EF /* Pods_IOS_UI_Design_IOS_UI_DesignUITests.framework */; };
+		FB0D428C282253AD001C0964 /* localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FB0D428E282253AD001C0964 /* localizable.strings */; };
 		FB3D6332282128AC00411677 /* WelcomeUILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3D6331282128AC00411677 /* WelcomeUILabel.swift */; };
 		FB3D63342821296800411677 /* LoginTagLineUILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3D63332821296800411677 /* LoginTagLineUILabel.swift */; };
 		FB3D633628212D4700411677 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3D633528212D4700411677 /* LoginViewController.swift */; };
@@ -90,6 +91,10 @@
 		CEC681D016F5462FA64A6104 /* Pods-IOS_UI_Design.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS_UI_Design.debug.xcconfig"; path = "Target Support Files/Pods-IOS_UI_Design/Pods-IOS_UI_Design.debug.xcconfig"; sourceTree = "<group>"; };
 		DEBDBC4F9D1BAE67CD076A4F /* Pods-IOS_UI_Design.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS_UI_Design.release.xcconfig"; path = "Target Support Files/Pods-IOS_UI_Design/Pods-IOS_UI_Design.release.xcconfig"; sourceTree = "<group>"; };
 		F3887C1FFF099014FC203E47 /* Pods-IOS_UI_DesignTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS_UI_DesignTests.debug.xcconfig"; path = "Target Support Files/Pods-IOS_UI_DesignTests/Pods-IOS_UI_DesignTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FB0D428D282253AD001C0964 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/localizable.strings; sourceTree = "<group>"; };
+		FB0D428F28225468001C0964 /* en-IN */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-IN"; path = "en-IN.lproj/Main.strings"; sourceTree = "<group>"; };
+		FB0D429028225496001C0964 /* en-IN */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-IN"; path = "en-IN.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		FB0D429128225497001C0964 /* en-IN */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-IN"; path = "en-IN.lproj/localizable.strings"; sourceTree = "<group>"; };
 		FB3D6331282128AC00411677 /* WelcomeUILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeUILabel.swift; sourceTree = "<group>"; };
 		FB3D63332821296800411677 /* LoginTagLineUILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTagLineUILabel.swift; sourceTree = "<group>"; };
 		FB3D633528212D4700411677 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -203,6 +208,7 @@
 				FB7C3B1E28201959004059E7 /* RegistrationViewController.swift */,
 				FB7C3B20282019AA004059E7 /* ViewController+extension.swift */,
 				FB3D633528212D4700411677 /* LoginViewController.swift */,
+				FB0D428E282253AD001C0964 /* localizable.strings */,
 			);
 			path = IOS_UI_Design;
 			sourceTree = "<group>";
@@ -391,6 +397,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"en-IN",
 			);
 			mainGroup = 816964F1281D534E00BBD6B5;
 			productRefGroup = 816964FB281D534E00BBD6B5 /* Products */;
@@ -414,6 +421,7 @@
 				FBA3D5D2281FE846002F5076 /* Poppins-SemiBold.ttf in Resources */,
 				8169650A281D534E00BBD6B5 /* LaunchScreen.storyboard in Resources */,
 				81696507281D534E00BBD6B5 /* Assets.xcassets in Resources */,
+				FB0D428C282253AD001C0964 /* localizable.strings in Resources */,
 				81696505281D534E00BBD6B5 /* Main.storyboard in Resources */,
 				FBA3D5BF281FD24C002F5076 /* PoppinsBold.ttf in Resources */,
 			);
@@ -623,6 +631,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				81696504281D534E00BBD6B5 /* Base */,
+				FB0D428F28225468001C0964 /* en-IN */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -631,8 +640,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				81696509281D534E00BBD6B5 /* Base */,
+				FB0D429028225496001C0964 /* en-IN */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FB0D428E282253AD001C0964 /* localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB0D428D282253AD001C0964 /* en */,
+				FB0D429128225497001C0964 /* en-IN */,
+			);
+			name = localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -642,6 +661,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -702,6 +722,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
