@@ -40,7 +40,6 @@
 		FB9602B4282280DC00C0490E /* NextUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9602B3282280DC00C0490E /* NextUIButton.swift */; };
 		FB9602B62822851100C0490E /* SkipUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9602B52822851100C0490E /* SkipUIButton.swift */; };
 		FB9602BA2822884400C0490E /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9602B82822884400C0490E /* OnboardingCollectionViewCell.swift */; };
-		FB9602BB2822884400C0490E /* OnboardingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB9602B92822884400C0490E /* OnboardingCollectionViewCell.xib */; };
 		FB9602BD28228D4A00C0490E /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9602BC28228D4A00C0490E /* OnBoardingViewController.swift */; };
 		FB9602BF28228D7500C0490E /* PageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9602BE28228D7500C0490E /* PageModel.swift */; };
 		FB9602C228229F8700C0490E /* ProfileStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB9602C128229F8700C0490E /* ProfileStoryboard.storyboard */; };
@@ -121,7 +120,6 @@
 		FB9602B3282280DC00C0490E /* NextUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextUIButton.swift; sourceTree = "<group>"; };
 		FB9602B52822851100C0490E /* SkipUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkipUIButton.swift; sourceTree = "<group>"; };
 		FB9602B82822884400C0490E /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
-		FB9602B92822884400C0490E /* OnboardingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingCollectionViewCell.xib; sourceTree = "<group>"; };
 		FB9602BC28228D4A00C0490E /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
 		FB9602BE28228D7500C0490E /* PageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageModel.swift; sourceTree = "<group>"; };
 		FB9602C128229F8700C0490E /* ProfileStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileStoryboard.storyboard; sourceTree = "<group>"; };
@@ -319,7 +317,6 @@
 			children = (
 				FB9602B128227CE800C0490E /* OnBoardingStoryboard.storyboard */,
 				FB9602B82822884400C0490E /* OnboardingCollectionViewCell.swift */,
-				FB9602B92822884400C0490E /* OnboardingCollectionViewCell.xib */,
 				FB9602BC28228D4A00C0490E /* OnBoardingViewController.swift */,
 				FB9602BE28228D7500C0490E /* PageModel.swift */,
 			);
@@ -478,7 +475,6 @@
 				FB9602C228229F8700C0490E /* ProfileStoryboard.storyboard in Resources */,
 				FB9602B228227CE800C0490E /* OnBoardingStoryboard.storyboard in Resources */,
 				FBA3D5D2281FE846002F5076 /* Poppins-SemiBold.ttf in Resources */,
-				FB9602BB2822884400C0490E /* OnboardingCollectionViewCell.xib in Resources */,
 				8169650A281D534E00BBD6B5 /* LaunchScreen.storyboard in Resources */,
 				81696507281D534E00BBD6B5 /* Assets.xcassets in Resources */,
 				FB0D428C282253AD001C0964 /* localizable.strings in Resources */,
@@ -621,7 +617,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

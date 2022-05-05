@@ -8,22 +8,18 @@
 import Foundation
 import UIKit
 
+@IBDesignable
 class JobDateUILabel : BaseCustomUILabel {
     
-    //It is called whenever textfield is added programatically
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        JobDateUILabel()
-    }
-    
-    //It is called whenever textfield is added through Storyboard
-    required init?(coder: NSCoder) {
-        super.init(coder: coder)
-        JobDateUILabel()
-    }
+    @IBInspectable var jobDateLabel: String = "" {
+            didSet {
+                JobDateUILabel()
+            }
+        }
     
     func JobDateUILabel() {
         self.font = UIFont.init(name: "PoppinsRegular", size: 13)
         self.textColor = UIColor.gray
+        self.text = jobDateLabel
     }
 }

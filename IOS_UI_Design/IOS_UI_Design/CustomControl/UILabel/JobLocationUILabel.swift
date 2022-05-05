@@ -8,22 +8,18 @@
 import Foundation
 import UIKit
 
+@IBDesignable
 class JobLocationUILabel : BaseCustomUILabel {
     
-    //It is called whenever textfield is added programatically
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        JobLocationUILabel()
-    }
-    
-    //It is called whenever textfield is added through Storyboard
-    required init?(coder: NSCoder) {
-        super.init(coder: coder)
-        JobLocationUILabel()
-    }
+    @IBInspectable var jobLocationName: String = "" {
+            didSet {
+                JobLocationUILabel()
+            }
+        }
     
     func JobLocationUILabel() {
         self.font = UIFont.init(name: "PoppinsRegular", size: 12)
         self.textColor = UIColor.black
+        self.text = jobLocationName
     }
 }
