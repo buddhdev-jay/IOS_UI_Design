@@ -30,14 +30,15 @@ class LoginViewController: UIViewController {
 extension LoginViewController {
     
     @IBAction func onClickRegisterButton(_ sender: Any) {
-        alert(customMessage: "Register Link Clicked")
+        if let onBoardvc = UIStoryboard(name: "OnBoardingStoryboard", bundle: nil).instantiateViewController(withIdentifier:"OnBoardingViewController") as? OnBoardingViewController {
+            self.navigationController?.pushViewController(onBoardvc, animated: true)
+        }
     }
     
     @IBAction func onClickLoginButton(_ sender: UIButton) {
         if let onBoardvc = UIStoryboard(name: "ProfileStoryboard", bundle: nil).instantiateViewController(withIdentifier:"profileViewController") as? ProfileViewController {
             self.navigationController?.pushViewController(onBoardvc, animated: true)
         }
-        alert(customMessage: "login clicked")
     }
     
     @IBAction func onClickNavigationBar(_ sender: Any) {

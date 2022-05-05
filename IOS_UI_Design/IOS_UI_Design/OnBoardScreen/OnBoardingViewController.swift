@@ -13,12 +13,9 @@ class OnBoardingViewController: UIViewController, UICollectionViewDelegate {
     @IBOutlet weak var nextButton: NextUIButton!
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var collectionView: UICollectionView!
+     
+    var pages = [Page]()
     
-    
-    let pages: [Page] = [Page(imageName:"onBoardImageone", title: "Search your job", description: "Figure out your top five priorities whether it is company culture, salary."),
-                         Page(imageName: "onBoardImagetwo", title: "Browse jobs list", description: "Our job list include several  industries, so you can find the best job for you."),
-                         Page(imageName: "onBoardImagethree", title: "Apply to best jobs", description: "You can apply to your desirable jobs very quickly and easily with ease."),
-                         Page(imageName: "onBoardImagefour", title: "Make your career", description: "We help you find your dream job based on your skillset, location, demand.")]
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -27,6 +24,7 @@ class OnBoardingViewController: UIViewController, UICollectionViewDelegate {
         collectionView.register(UINib(nibName: "OnboardingCollectionViewCell", bundle: Bundle.main),
                                 forCellWithReuseIdentifier: "OnboardingCollectionViewCell")
         pageControl.numberOfPages = pages.count
+        setData()
         
     }
     @IBAction func pageChanged(_ sender: Any) {
@@ -35,9 +33,12 @@ class OnBoardingViewController: UIViewController, UICollectionViewDelegate {
                                     at: .centeredHorizontally, animated: true)
         
     }
-    // to update the UIPageControl
-    func scrollViewDidzEndDecelerating(_ scrollView: UIScrollView) {
-        pageControl.currentPage = Int(scrollView.contentOffset.x) / Int(scrollView.frame.width)
+    
+    
+    func setData(){
+        pages.append(Page(imageName:"onBoardImageone", title: "Search your job", description: "Figure out your top five priorities whether it is company culture, salary."))
+        pages.append(Page(imageName: "onBoardImagethree", title: "Apply to best jobs", description: "You can apply to your desirable jobs very quickly and easily with ease."))
+        pages.append(Page(imageName: "onBoardImagefour", title: "Make your career", description: "We help you find your dream job based on your skillset, location, demand."))
     }
 }
 
@@ -61,5 +62,9 @@ extension OnBoardingViewController : UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: self.collectionView.frame.width, height: self.collectionView.frame.height)
+    }
+    // to update the UIPageControl
+    func scrollViewDidzEndDecelerating(_ scrollView: UIScrollView) {
+        pageControl.currentPage = Int(scrollView.contentOffset.x) / Int(scrollView.frame.width)
     }
 }
