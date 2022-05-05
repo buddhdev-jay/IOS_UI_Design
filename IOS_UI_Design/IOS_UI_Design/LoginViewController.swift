@@ -8,13 +8,13 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-
+    
     // MARK: - Outlets
     @IBOutlet weak var passwordTextField: PasswordTextField!
     @IBOutlet weak var emailTextField: EmailTextField!
     @IBOutlet weak var scrollView: UIScrollView!
     
-   
+    
     // MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,9 +30,7 @@ class LoginViewController: UIViewController {
 extension LoginViewController {
     
     @IBAction func onClickRegisterButton(_ sender: Any) {
-        if let onBoardvc = UIStoryboard(name: "OnBoardingStoryboard", bundle: nil).instantiateViewController(withIdentifier:"OnBoardingViewController") as? OnBoardingViewController {
-            self.navigationController?.pushViewController(onBoardvc, animated: true)
-        }
+        alert(customMessage: "Registration Button Clicked")
     }
     
     @IBAction func onClickLoginButton(_ sender: UIButton) {
@@ -54,13 +52,13 @@ extension LoginViewController {
 extension LoginViewController {
     
     func hideKeyboardWhenTappedAround() {
-            let tap = UITapGestureRecognizer(target: self, action: #selector(LoginViewController.dismissKeyboard))
-            tap.cancelsTouchesInView = false
-            view.addGestureRecognizer(tap)
-        }
-        @objc func dismissKeyboard() {
-            view.endEditing(true)
-        }
+        let tap = UITapGestureRecognizer(target: self, action: #selector(LoginViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
     
 }
 

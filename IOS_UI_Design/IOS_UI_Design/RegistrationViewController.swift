@@ -34,7 +34,7 @@ class RegistrationViewController: UIViewController {
 extension RegistrationViewController {
     
     @IBAction func onClickRegister(_ sender: Any) {
-        alert(customMessage: "Register Button Clicked")
+        
     }
     
     @IBAction func onClickLogin(_ sender: Any) {

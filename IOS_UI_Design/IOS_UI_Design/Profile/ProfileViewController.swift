@@ -8,22 +8,33 @@
 import UIKit
 
 class ProfileViewController: UIViewController {
-
+    
+    // MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        turnOnSwipeToBack()
     }
     
+}
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+// MARK: - Swipe Back
+extension ProfileViewController {
+    
+    func turnOnSwipeToBack() {
+        self.navigationController?.interactivePopGestureRecognizer?.delegate = nil
+        self.navigationController?.interactivePopGestureRecognizer?.isEnabled = true
     }
-    */
+    
+}
 
+// MARK: - Outlets Actions
+extension ProfileViewController {
+    
+    @IBAction func onClickSeeAllEducation(_ sender: UIButton) {
+        alert(customMessage: "See All Education Clicked")
+    }
+    
+    @IBAction func onClickSeeAllExperince(_ sender: Any) {
+        alert(customMessage: "See All Experince Clicked")
+    }
 }

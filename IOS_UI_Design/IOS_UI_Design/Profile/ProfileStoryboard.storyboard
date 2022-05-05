@@ -35,7 +35,7 @@
                                 <rect key="frame" x="0.0" y="44" width="375" height="734"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dnr-1Q-yjD">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="799"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="680.33333333333337"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tzD-2F-8fb">
                                                 <rect key="frame" x="0.0" y="12" width="375" height="178.66666666666666"/>
@@ -134,19 +134,19 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PBl-Va-yLv">
-                                                <rect key="frame" x="24" y="338.66666666666669" width="327" height="104"/>
+                                                <rect key="frame" x="24" y="338.66666666666669" width="327" height="44.666666666666686"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Of8-lp-eW7" userLabel="mainStackview">
-                                                        <rect key="frame" x="24" y="0.0" width="291" height="104"/>
+                                                        <rect key="frame" x="24" y="0.0" width="291" height="44.666666666666664"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spotify_image" translatesAutoresizingMaskIntoConstraints="NO" id="Zfn-tR-g9g">
-                                                                <rect key="frame" x="0.0" y="0.0" width="281" height="104"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="52.333333333333336" height="44.666666666666664"/>
                                                             </imageView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="Irl-H7-jYK" userLabel="educationStackview">
-                                                                <rect key="frame" x="286" y="0.0" width="0.0" height="104"/>
+                                                                <rect key="frame" x="57.333333333333314" y="0.0" width="78.999999999999986" height="44.666666666666664"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="azs-ZS-aMn" customClass="JobTitleUILabel" customModule="IOS_UI_Design" customModuleProvider="target">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="104"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="79" height="22"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
@@ -155,7 +155,7 @@
                                                                         </userDefinedRuntimeAttributes>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="08s-yF-C3g" customClass="JobTagUILabel" customModule="IOS_UI_Design" customModuleProvider="target">
-                                                                        <rect key="frame" x="0.0" y="104" width="0.0" height="0.0"/>
+                                                                        <rect key="frame" x="0.0" y="22" width="79" height="22.666666666666671"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
@@ -167,10 +167,10 @@
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="618-DC-5An" userLabel="locationStackview">
-                                                                <rect key="frame" x="291" y="0.0" width="0.0" height="104"/>
+                                                                <rect key="frame" x="141.33333333333337" y="0.0" width="149.66666666666663" height="44.666666666666664"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="knc-0o-nph" customClass="JobLocationUILabel" customModule="IOS_UI_Design" customModuleProvider="target">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="50"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="149.66666666666666" height="20.333333333333332"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
@@ -179,7 +179,7 @@
                                                                         </userDefinedRuntimeAttributes>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i45-nn-BnS" customClass="JobDateUILabel" customModule="IOS_UI_Design" customModuleProvider="target">
-                                                                        <rect key="frame" x="0.0" y="54" width="0.0" height="50"/>
+                                                                        <rect key="frame" x="0.0" y="24.333333333333314" width="149.66666666666666" height="20.333333333333329"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
@@ -201,33 +201,36 @@
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Education" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nyc-nm-OAF">
-                                                <rect key="frame" x="25.999999999999993" y="474.66666666666663" width="83.333333333333314" height="22.666666666666686"/>
+                                                <rect key="frame" x="25.999999999999993" y="415.33333333333331" width="83.333333333333314" height="22.666666666666686"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="16"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LSu-IP-P4A">
-                                                <rect key="frame" x="306" y="467.66666666666669" width="43" height="31"/>
+                                                <rect key="frame" x="306" y="408.33333333333331" width="43" height="31"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="13"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="See all">
                                                     <color key="titleColor" red="0.68627450980000004" green="0.69019607839999997" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="onClickSeeAllEducation:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="utT-ut-H7g"/>
+                                                </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uen-S9-HLX">
-                                                <rect key="frame" x="24" y="509.33333333333337" width="327" height="104"/>
+                                                <rect key="frame" x="24" y="450" width="327" height="44.666666666666686"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="gCY-iN-zSb" userLabel="mainStackview">
-                                                        <rect key="frame" x="24" y="0.0" width="291" height="104"/>
+                                                        <rect key="frame" x="24" y="0.0" width="291" height="44.666666666666664"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="education_image" translatesAutoresizingMaskIntoConstraints="NO" id="vzn-Vh-twn">
-                                                                <rect key="frame" x="0.0" y="0.0" width="281" height="104"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="44" height="44.666666666666664"/>
                                                             </imageView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="97R-DN-FqS" userLabel="educationStackview">
-                                                                <rect key="frame" x="286" y="0.0" width="0.0" height="104"/>
+                                                                <rect key="frame" x="49" y="0.0" width="141.33333333333334" height="44.666666666666664"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z0e-X8-2Q3" customClass="JobTitleUILabel" customModule="IOS_UI_Design" customModuleProvider="target">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="104"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="141.33333333333334" height="22"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
@@ -236,7 +239,7 @@
                                                                         </userDefinedRuntimeAttributes>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eJr-Ji-XV1" customClass="JobTagUILabel" customModule="IOS_UI_Design" customModuleProvider="target">
-                                                                        <rect key="frame" x="0.0" y="104" width="0.0" height="0.0"/>
+                                                                        <rect key="frame" x="0.0" y="22" width="141.33333333333334" height="22.666666666666671"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
@@ -248,10 +251,10 @@
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="PnR-f7-qLo" userLabel="locationStackview">
-                                                                <rect key="frame" x="291" y="0.0" width="0.0" height="104"/>
+                                                                <rect key="frame" x="195.33333333333334" y="0.0" width="95.666666666666657" height="44.666666666666664"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cez-6w-87E" customClass="JobLocationUILabel" customModule="IOS_UI_Design" customModuleProvider="target">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="50"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="95.666666666666671" height="20.333333333333332"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
@@ -260,7 +263,7 @@
                                                                         </userDefinedRuntimeAttributes>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sOV-em-wfM" customClass="JobDateUILabel" customModule="IOS_UI_Design" customModuleProvider="target">
-                                                                        <rect key="frame" x="0.0" y="54" width="0.0" height="50"/>
+                                                                        <rect key="frame" x="0.0" y="24.333333333333371" width="95.666666666666671" height="20.333333333333329"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
@@ -282,23 +285,26 @@
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resume" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kv3-Ae-0Pz">
-                                                <rect key="frame" x="26" y="646.33333333333337" width="67" height="22.666666666666629"/>
+                                                <rect key="frame" x="26" y="527.66666666666663" width="67" height="22.666666666666629"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="16"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make a resume" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TpK-AH-g2h">
-                                                <rect key="frame" x="251" y="647.33333333333337" width="100" height="18.333333333333371"/>
+                                                <rect key="frame" x="251" y="528.66666666666663" width="100" height="18.333333333333371"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="13"/>
                                                 <color key="textColor" name="GreenColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="586-Om-XNY">
-                                                <rect key="frame" x="24" y="681" width="327" height="88"/>
+                                                <rect key="frame" x="24" y="562.33333333333337" width="327" height="88"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YK2-EM-nB0" customClass="RoundedCustomUIButton" customModule="IOS_UI_Design" customModuleProvider="target">
-                                                        <rect key="frame" x="24" y="8.0000000000000018" width="30" height="21.666666666666671"/>
+                                                        <rect key="frame" x="24" y="8" width="30" height="14"/>
                                                         <color key="backgroundColor" name="AccentColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="14" id="K74-Ku-ely"/>
+                                                        </constraints>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal">
                                                             <attributedString key="attributedTitle">
@@ -317,7 +323,7 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Eua-pF-gTH">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Eua-pF-gTH" customClass="RoundedCustomUIButton" customModule="IOS_UI_Design" customModuleProvider="target">
                                                         <rect key="frame" x="266" y="8" width="35" height="14"/>
                                                         <color key="backgroundColor" red="0.37254901960784315" green="0.29411764705882354" blue="0.71372549019607845" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
@@ -337,7 +343,7 @@
                                                         </state>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mA9-F1-96x">
-                                                        <rect key="frame" x="24" y="44.333333333333371" width="279" height="35.666666666666657"/>
+                                                        <rect key="frame" x="24" y="44.333333333333258" width="279" height="35.666666666666657"/>
                                                         <string key="text">Creative UX Designer with 6+ years of experience in optimizing user experience through innovative solutions and dynamic interface designs. Successful in enhancing user engagement for well-known brands, providing a compelling user experience to improve brand loyalty and customer retention.  </string>
                                                         <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="7"/>
                                                         <color key="textColor" red="0.58431372549019611" green="0.58823529411764708" blue="0.61568627450980395" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
@@ -373,6 +379,9 @@
                                                 <state key="normal" title="See all">
                                                     <color key="titleColor" red="0.68627450980000004" green="0.69019607839999997" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="onClickSeeAllExperince:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="gFD-jR-Lfm"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -537,37 +546,37 @@
                                                 </subviews>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Experience" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OSM-qn-lvU">
-                                                <rect key="frame" x="26" y="307.33333333333326" width="80" height="22.666666666666686"/>
+                                                <rect key="frame" x="26" y="307.33333333333326" width="89" height="22.666666666666686"/>
                                                 <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="16"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="See all" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kgw-bQ-eTU">
-                                                <rect key="frame" x="310" y="307.33333333333337" width="39" height="18.333333333333314"/>
+                                                <rect key="frame" x="306.33333333333331" y="307.33333333333337" width="42.666666666666686" height="18.333333333333314"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="13"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Education" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zXM-Wp-tWM">
-                                                <rect key="frame" x="26" y="448" width="72.333333333333329" height="22.666666666666686"/>
+                                                <rect key="frame" x="25.999999999999993" y="448" width="83.333333333333314" height="22.666666666666686"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="16"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="See all" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uft-4k-fbI">
-                                                <rect key="frame" x="310" y="448" width="39" height="18.333333333333314"/>
+                                                <rect key="frame" x="306.33333333333331" y="448" width="42.666666666666686" height="18.333333333333314"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="13"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resume" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="096-tp-Tc5">
-                                                <rect key="frame" x="26" y="593.66666666666663" width="59" height="18.666666666666629"/>
+                                                <rect key="frame" x="26" y="589.66666666666663" width="67" height="22.666666666666629"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="16"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Make a resume" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ox7-ce-efs">
-                                                <rect key="frame" x="261.66666666666669" y="590.66666666666652" width="89.333333333333314" height="18.333333333333371"/>
+                                                <rect key="frame" x="251" y="590.66666666666652" width="100" height="18.333333333333371"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="13"/>
                                                 <color key="textColor" name="GreenColor"/>
                                                 <nil key="highlightedColor"/>
@@ -586,7 +595,7 @@
                                                         <state key="normal" title="CV"/>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Haley Jessica" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bzP-bo-b5I">
-                                                        <rect key="frame" x="129.66666666666666" y="8" width="67.666666666666657" height="13"/>
+                                                        <rect key="frame" x="130" y="8" width="67.333333333333314" height="14"/>
                                                         <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="11"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -602,14 +611,14 @@
                                                         <state key="normal" title="PDF"/>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CXY-xC-QEh">
-                                                        <rect key="frame" x="24" y="42.333333333333258" width="279" height="32.666666666666657"/>
+                                                        <rect key="frame" x="24" y="44.333333333333258" width="279" height="35.666666666666657"/>
                                                         <string key="text">Creative UX Designer with 6+ years of experience in optimizing user experience through innovative solutions and dynamic interface designs. Successful in enhancing user engagement for well-known brands, providing a compelling user experience to improve brand loyalty and customer retention.  </string>
                                                         <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="7"/>
                                                         <color key="textColor" red="0.58431372550000005" green="0.58823529409999997" blue="0.61568627450000002" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UX Designer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uem-2b-4Sz">
-                                                        <rect key="frame" x="141.33333333333334" y="23" width="44.666666666666657" height="9.3333333333333357"/>
+                                                        <rect key="frame" x="141.33333333333334" y="24" width="44.666666666666657" height="10.333333333333336"/>
                                                         <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="8"/>
                                                         <color key="textColor" red="0.58431372550000005" green="0.58823529409999997" blue="0.61568627450000002" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -682,14 +691,30 @@
         </scene>
     </scenes>
     <designables>
-        <designable name="08s-yF-C3g"/>
-        <designable name="Cez-6w-87E"/>
-        <designable name="azs-ZS-aMn"/>
-        <designable name="eJr-Ji-XV1"/>
-        <designable name="i45-nn-BnS"/>
-        <designable name="knc-0o-nph"/>
-        <designable name="sOV-em-wfM"/>
-        <designable name="z0e-X8-2Q3"/>
+        <designable name="08s-yF-C3g">
+            <size key="intrinsicContentSize" width="54" height="20.333333333333332"/>
+        </designable>
+        <designable name="Cez-6w-87E">
+            <size key="intrinsicContentSize" width="74.333333333333329" height="20.333333333333332"/>
+        </designable>
+        <designable name="azs-ZS-aMn">
+            <size key="intrinsicContentSize" width="65" height="19.666666666666668"/>
+        </designable>
+        <designable name="eJr-Ji-XV1">
+            <size key="intrinsicContentSize" width="138" height="20.333333333333332"/>
+        </designable>
+        <designable name="i45-nn-BnS">
+            <size key="intrinsicContentSize" width="121.33333333333333" height="20.333333333333332"/>
+        </designable>
+        <designable name="knc-0o-nph">
+            <size key="intrinsicContentSize" width="101" height="20.333333333333332"/>
+        </designable>
+        <designable name="sOV-em-wfM">
+            <size key="intrinsicContentSize" width="93.333333333333329" height="20.333333333333332"/>
+        </designable>
+        <designable name="z0e-X8-2Q3">
+            <size key="intrinsicContentSize" width="132" height="19.666666666666668"/>
+        </designable>
     </designables>
     <resources>
         <image name="education_image" width="43" height="43"/>
