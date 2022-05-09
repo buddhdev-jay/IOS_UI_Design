@@ -15,6 +15,9 @@ class ProfileViewController: UIViewController {
         turnOnSwipeToBack()
     }
     
+    @IBAction func onClickResume(_ sender: UIButton) {
+        alert(customMessage: R.string.localizable.resumeButtonClicked())
+    }
 }
 
 // MARK: - Swipe Back
@@ -31,10 +34,10 @@ extension ProfileViewController {
 extension ProfileViewController {
     
     @IBAction func onClickSeeAllEducation(_ sender: UIButton) {
-        alert(customMessage: "See All Education Clicked")
+        alert(customMessage:R.string.localizable.seeAllEducationClicked())
     }
     
     @IBAction func onClickSeeAllExperince(_ sender: Any) {
-        alert(customMessage: "See All Experince Clicked")
+        alert(customMessage:R.string.localizable.seeAllExperienceClicked())
     }
 }

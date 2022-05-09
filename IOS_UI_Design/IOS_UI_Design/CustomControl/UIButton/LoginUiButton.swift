@@ -24,8 +24,8 @@ class LoginUiButton : BaseCustomUIButton {
     
     override func setupUiButton() {
         super.setupUiButton()
-        self.setTitle("Log in", for: .normal)
-        self.titleLabel?.font =  UIFont(name:"PoppinsRegular",size: 16)
+        self.setTitle(R.string.localizable.logIn(), for: .normal)
+        self.titleLabel?.font =  R.font.poppinsRegular(size: CGFloat(Constants.SIXTEEN))
         self.setTitleColor(.whiteColor, for: .normal)
     }
 }

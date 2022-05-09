@@ -12,13 +12,17 @@ import UIKit
 class JobTitleUILabel : BaseCustomUILabel {
     
     @IBInspectable var jobTitleName: String = "" {
-            didSet {
-                JobTitleUILabel()
-            }
+        didSet {
+            JobTitleUILabel()
         }
+    }
+}
+
+// MARK: - Intial Setup
+extension JobTitleUILabel {
     
     func JobTitleUILabel() {
-        self.font = UIFont.init(name: "Poppins-SemiBold", size: CGFloat(Constants.FOURTEEN))
+        self.font = R.font.poppinsSemiBold(size: CGFloat(Constants.FOURTEEN))
         self.textColor = UIColor.black
         self.text = jobTitleName
     }

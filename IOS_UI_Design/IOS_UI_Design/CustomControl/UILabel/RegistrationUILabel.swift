@@ -23,6 +23,6 @@ class RegistrationUILabel : UILabel {
     
     func setupRegistrationUILabel(){
         self.text = R.string.localizable.registrationTextHeader()
-        self.font = UIFont.init(name: "Poppins-SemiBold", size: CGFloat(Constants.TWENTYFOUR))
+        self.font = R.font.poppinsSemiBold(size: CGFloat(Constants.TWENTYFOUR))
     }
 }

@@ -22,13 +22,16 @@ class EmailTextField : BaseCustomTextField {
         EmailTextFieldsetup()
     }
     
+}
+
+// MARK: - Intial Setup
+extension EmailTextField {
+    
     func EmailTextFieldsetup() {
         keyboardType = .emailAddress
         keyboardAppearance = .light
-        self.attributedPlaceholder = NSAttributedString(
-            string: "Email",
-            attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray]
-        )
-        super.setUpImage(leftImage: "mail_icon")
+        self.attributedPlaceholder = NSAttributedString(string:R.string.localizable.email(),attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray])
+        super.setUpImage(leftImage: R.image.mail_icon.name)
     }
+    
 }

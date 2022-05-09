@@ -1,14 +1,16 @@
 /* 
-  localizable.strings
-  IOS_UI_Design
-
-  Created by Jay Buddhdev on 04/05/22.
-  
-*/
+ localizable.strings
+ IOS_UI_Design
+ 
+ Created by Jay Buddhdev on 04/05/22.
+ 
+ */
 
 
 "registrationTextHeader" = "Registration👍";
 "registrationTagLine" = "Let’s Register. Apply to jobs!";
+"logInTagLine" = "Let’s log in. Apply to jobs!";
+"welcomeBackTagLine"= "Welcome Back 👋";
 "next" = "Next";
 "skip" = "Skip";
 "onBoardTitleOne" = "Search your job";
@@ -19,3 +21,13 @@
 "onBoardTagTwo" = "Our job list include several  industries, so you can find the best job for you.";
 "onBoardTagThree" = "You can apply to your desirable jobs very quickly and easily with ease.";
 "onBoardTagFour" = "We help you find your dream job based on your skillset, location, demand.";
+"register" = "Register";
+"logIn" = "Log in";
+"password" = "Password" ;
+"email" = "Email";
+"userName"= "User Name";
+"registrationBtnClicked" = "Registration Button Clicked";
+"forgetPasswordClicked" = "Forget Password Clicked" ;
+"resumeButtonClicked" = "ResumeButtonClicked";
+"seeAllEducationClicked" = "See All Education Clicked";
+"seeAllExperienceClicked" = "See All Experience Clicked";

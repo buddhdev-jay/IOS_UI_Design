@@ -17,8 +17,14 @@ class JobDateUILabel : BaseCustomUILabel {
             }
         }
     
+    
+}
+
+// MARK: - Intial Setup
+extension JobDateUILabel {
+    
     func JobDateUILabel() {
-        self.font = UIFont.init(name: "PoppinsRegular", size: 13)
+        self.font = R.font.poppinsRegular(size: CGFloat(Constants.THIRTEEN))
         self.textColor = UIColor.gray
         self.text = jobDateLabel
     }

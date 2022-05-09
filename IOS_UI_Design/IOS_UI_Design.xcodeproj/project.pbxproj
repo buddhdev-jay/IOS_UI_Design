@@ -55,6 +55,10 @@
 		FBA3D5D1281FE73C002F5076 /* RegisterTagLineUILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA3D5D0281FE73C002F5076 /* RegisterTagLineUILabel.swift */; };
 		FBA3D5D2281FE846002F5076 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FBA3D5CF281FDCE9002F5076 /* Poppins-SemiBold.ttf */; };
 		FBDC19CC2822417400E01F7B /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDC19CB2822417300E01F7B /* R.generated.swift */; };
+		FBE774292828D05A00AEE869 /* BaseCustomUIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE774282828D05A00AEE869 /* BaseCustomUIImageView.swift */; };
+		FBE7742B2828D11C00AEE869 /* RoundedCustomUIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE7742A2828D11C00AEE869 /* RoundedCustomUIImageView.swift */; };
+		FBE7742D2828D26400AEE869 /* OnBoardingHeadingUILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE7742C2828D26400AEE869 /* OnBoardingHeadingUILabel.swift */; };
+		FBE7742F2828D48900AEE869 /* OnBoardingDescriptionUILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE7742E2828D48900AEE869 /* OnBoardingDescriptionUILabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,6 +139,10 @@
 		FBA3D5CF281FDCE9002F5076 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
 		FBA3D5D0281FE73C002F5076 /* RegisterTagLineUILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterTagLineUILabel.swift; sourceTree = "<group>"; };
 		FBDC19CB2822417300E01F7B /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		FBE774282828D05A00AEE869 /* BaseCustomUIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCustomUIImageView.swift; sourceTree = "<group>"; };
+		FBE7742A2828D11C00AEE869 /* RoundedCustomUIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCustomUIImageView.swift; sourceTree = "<group>"; };
+		FBE7742C2828D26400AEE869 /* OnBoardingHeadingUILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingHeadingUILabel.swift; sourceTree = "<group>"; };
+		FBE7742E2828D48900AEE869 /* OnBoardingDescriptionUILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingDescriptionUILabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -260,6 +268,7 @@
 		81D72280281D568800403AA9 /* CustomControl */ = {
 			isa = PBXGroup;
 			children = (
+				FBE774272828D03000AEE869 /* UIImageView */,
 				FBA3D5CC281FDC51002F5076 /* UILabel */,
 				81D72284281D90F100403AA9 /* UIButton */,
 				81D72281281D56AF00403AA9 /* UiTextField */,
@@ -355,8 +364,19 @@
 				FB9602C72822A96700C0490E /* JobTagUILabel.swift */,
 				FB9602C92822AA5200C0490E /* JobLocationUILabel.swift */,
 				FB9602CB2822AAF400C0490E /* JobDateUILabel.swift */,
+				FBE7742C2828D26400AEE869 /* OnBoardingHeadingUILabel.swift */,
+				FBE7742E2828D48900AEE869 /* OnBoardingDescriptionUILabel.swift */,
 			);
 			path = UILabel;
+			sourceTree = "<group>";
+		};
+		FBE774272828D03000AEE869 /* UIImageView */ = {
+			isa = PBXGroup;
+			children = (
+				FBE774282828D05A00AEE869 /* BaseCustomUIImageView.swift */,
+				FBE7742A2828D11C00AEE869 /* RoundedCustomUIImageView.swift */,
+			);
+			path = UIImageView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -636,15 +656,19 @@
 				FB9602C62822A84E00C0490E /* JobTitleUILabel.swift in Sources */,
 				81696502281D534E00BBD6B5 /* ViewController.swift in Sources */,
 				FB9602CA2822AA5200C0490E /* JobLocationUILabel.swift in Sources */,
+				FBE7742D2828D26400AEE869 /* OnBoardingHeadingUILabel.swift in Sources */,
 				FB8C6178282239430049D827 /* BaseCustomUILabel.swift in Sources */,
 				FB9602BF28228D7500C0490E /* PageModel.swift in Sources */,
 				FB7C3B21282019AA004059E7 /* ViewController+extension.swift in Sources */,
 				FBDC19CC2822417400E01F7B /* R.generated.swift in Sources */,
+				FBE774292828D05A00AEE869 /* BaseCustomUIImageView.swift in Sources */,
 				FB9602B62822851100C0490E /* SkipUIButton.swift in Sources */,
 				FB7C3B1F28201959004059E7 /* RegistrationViewController.swift in Sources */,
+				FBE7742B2828D11C00AEE869 /* RoundedCustomUIImageView.swift in Sources */,
 				FB9602CC2822AAF400C0490E /* JobDateUILabel.swift in Sources */,
 				FB9602BA2822884400C0490E /* OnboardingCollectionViewCell.swift in Sources */,
 				81D7227F281D55E200403AA9 /* ColorFile.swift in Sources */,
+				FBE7742F2828D48900AEE869 /* OnBoardingDescriptionUILabel.swift in Sources */,
 				816964FE281D534E00BBD6B5 /* AppDelegate.swift in Sources */,
 				FBA3D5CE281FDC79002F5076 /* RegistrationUILabel.swift in Sources */,
 				FB3D6332282128AC00411677 /* WelcomeUILabel.swift in Sources */,
@@ -853,7 +877,7 @@
 				INFOPLIST_FILE = IOS_UI_Design/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = OnBoardingStoryboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -885,7 +909,7 @@
 				INFOPLIST_FILE = IOS_UI_Design/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = OnBoardingStoryboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;

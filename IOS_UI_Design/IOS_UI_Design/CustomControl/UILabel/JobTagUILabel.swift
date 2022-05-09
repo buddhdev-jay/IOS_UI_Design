@@ -12,14 +12,19 @@ import UIKit
 class JobTagUILabel : BaseCustomUILabel {
     
     @IBInspectable var jobTagLineName: String = "" {
-            didSet {
-                JobTagUILabel()
-            }
+        didSet {
+            JobTagUILabel()
         }
+    }
+}
+
+// MARK: - Intial Setup
+extension JobTagUILabel {
     
     func JobTagUILabel() {
-        self.font = UIFont.init(name: "PoppinsRegular", size: 13)
+        self.font =   R.font.poppinsRegular(size: CGFloat(Constants.THIRTEEN))
         self.textColor = UIColor.gray
         self.text = jobTagLineName
     }
+    
 }

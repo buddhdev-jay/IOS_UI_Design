@@ -24,8 +24,8 @@ class RegisterUiButton:BaseCustomUIButton {
     
     override func setupUiButton() {
         super.setupUiButton()
-        self.setTitle("Register", for: .normal)
-        self.titleLabel?.font =  UIFont(name:"PoppinsRegular",size: 16)
+        self.setTitle(R.string.localizable.register(), for: .normal)
+        self.titleLabel?.font =  R.font.poppinsRegular(size: CGFloat(Constants.SIXTEEN))
         self.setTitleColor(.whiteColor, for: .normal)
     }
 }

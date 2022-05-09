@@ -12,8 +12,8 @@ class OnBoardingViewController: UIViewController, UICollectionViewDelegate {
     // MARK: - Outlets
     @IBOutlet weak var skipButton: UIButton!
     @IBOutlet weak var nextButton: NextUIButton!
-    @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var pageControl: UIPageControl!
+    @IBOutlet weak var collectionView: UICollectionView!
     
     // MARK: - Variables
     var pages = [Page]()
@@ -48,7 +48,7 @@ extension OnBoardingViewController {
     
     @IBAction func onNextButtonClick(_ sender: NextUIButton) {
         if (current == pages.count - 1) {
-            if let registartionvc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier:"registrationViewController") as?  RegistrationViewController {
+            if let registartionvc = UIStoryboard(name: Constants.MainStroyBoard, bundle: nil).instantiateViewController(withIdentifier:Constants.RegistrationViewController) as?  RegistrationViewController {
                 self.navigationController?.pushViewController(registartionvc, animated: true)
             }
         } else {
@@ -63,20 +63,19 @@ extension OnBoardingViewController {
     }
     
     @IBAction func onClickSkipButton(_ sender: Any) {
-        if let registartionvc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier:"registrationViewController") as?  RegistrationViewController {
+        if let registartionvc = UIStoryboard(name: Constants.MainStroyBoard, bundle: nil).instantiateViewController(withIdentifier:Constants.RegistrationViewController) as?  RegistrationViewController {
             self.navigationController?.pushViewController(registartionvc, animated: true)
         }
     }
-    
 }
 
 // MARK: - set Data
 extension OnBoardingViewController {
     
     func setData(){
-        pages.append(Page(imageName:"onBoardImageone", title: "Search your job", description: "Figure out your top five priorities whether it is company culture, salary."))
-        pages.append(Page(imageName: "onBoardImagetwo", title: "Apply to best jobs", description: "You can apply to your desirable jobs very quickly and easily with ease."))
-        pages.append(Page(imageName: "onBoardImagethree", title: "Make your career", description: "We help you find your dream job based on your skillset, location, demand."))
+        pages.append(Page(imageName:R.image.onBoardImageone.name, title: R.string.localizable.onBoardTitleOne(), description: R.string.localizable.onBoardTagOne()))
+        pages.append(Page(imageName: R.image.onBoardImagetwo.name, title: R.string.localizable.onBoardTitleTwo(), description: R.string.localizable.onBoardTagTwo()))
+        pages.append(Page(imageName: R.image.onBoardImagethree.name, title: R.string.localizable.onBoardTitleThree(), description: R.string.localizable.onBoardTagThree()))
     }
     
 }
@@ -89,7 +88,7 @@ extension OnBoardingViewController : UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell",for: indexPath) as? OnboardingCollectionViewCell {
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.CollectionViewCell,for: indexPath) as? OnboardingCollectionViewCell {
             cell.configureCell(page: pages[indexPath.item])
             return cell
         }
@@ -110,11 +109,11 @@ extension OnBoardingViewController : UICollectionViewDelegateFlowLayout {
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return CGFloat(0)
+        return CGFloat(Constants.ZERO)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return CGFloat(0)
+        return CGFloat(Constants.ZERO)
     }
     
 }

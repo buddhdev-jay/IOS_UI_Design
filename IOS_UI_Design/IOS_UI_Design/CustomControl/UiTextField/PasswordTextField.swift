@@ -21,13 +21,19 @@ class PasswordTextField : BaseCustomTextField {
         super.init(coder: coder)
         PasswordTextFieldsetup()
     }
+   
+}
+
+// MARK: - Intial Setup
+extension PasswordTextField {
     
     func PasswordTextFieldsetup() {
         keyboardType = .asciiCapable
         keyboardAppearance = .light
         isSecureTextEntry = true
-        self.attributedPlaceholder = NSAttributedString(string: "Password",attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray])
-        super.setUpImage(leftImage: "password_icon")
+        self.attributedPlaceholder = NSAttributedString(string: R.string.localizable.password(),attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray])
+        super.setUpImage(leftImage: R.image.password_icon.name)
         setUpButton()
     }
+    
 }

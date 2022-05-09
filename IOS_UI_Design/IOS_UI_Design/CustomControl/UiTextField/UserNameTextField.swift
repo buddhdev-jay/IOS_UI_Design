@@ -22,13 +22,17 @@ class UserNameTextFiled: BaseCustomTextField {
         UserNameTextFiledsetup()
     }
     
+    
+}
+
+// MARK: - Intial Setup
+extension UserNameTextFiled {
+    
     func UserNameTextFiledsetup() {
         keyboardType = .asciiCapable
         keyboardAppearance = .light
-        self.attributedPlaceholder = NSAttributedString(
-            string: "User Name",
-            attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray]
-        )
-        super.setUpImage(leftImage: "user_profile_icon")
+        self.attributedPlaceholder = NSAttributedString(string: R.string.localizable.userName(),attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray])
+        super.setUpImage(leftImage: R.image.user_profile_icon.name)
     }
+    
 }

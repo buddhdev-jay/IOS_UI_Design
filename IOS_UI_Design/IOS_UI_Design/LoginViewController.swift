@@ -30,11 +30,11 @@ class LoginViewController: UIViewController {
 extension LoginViewController {
     
     @IBAction func onClickRegisterButton(_ sender: Any) {
-        alert(customMessage: "Registration Button Clicked")
+        alert(customMessage:R.string.localizable.registrationBtnClicked())
     }
     
     @IBAction func onClickLoginButton(_ sender: UIButton) {
-        if let onBoardvc = UIStoryboard(name: "ProfileStoryboard", bundle: nil).instantiateViewController(withIdentifier:"profileViewController") as? ProfileViewController {
+        if let onBoardvc = UIStoryboard(name: Constants.ProfileStoryBoard, bundle: nil).instantiateViewController(withIdentifier: Constants.ProfileViewController)as? ProfileViewController {
             self.navigationController?.pushViewController(onBoardvc, animated: true)
         }
     }
@@ -43,7 +43,7 @@ extension LoginViewController {
         self.navigationController?.popViewController(animated: true)
     }
     @IBAction func onClickForgetPassword(_ sender: UIButton) {
-        alert(customMessage: "Forget Password Clicked")
+        alert(customMessage: R.string.localizable.forgetPasswordClicked())
     }
     
 }
@@ -62,6 +62,7 @@ extension LoginViewController {
     
 }
 
+// MARK: - KeyBoard Height
 extension LoginViewController {
     
     @objc fileprivate func keyboardWillShow(notification:NSNotification) {
@@ -69,7 +70,7 @@ extension LoginViewController {
         var keyboardFrame:CGRect = (userInfo[UIResponder.keyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue
         keyboardFrame = self.view.convert(keyboardFrame, from: nil)
         var contentInset:UIEdgeInsets = self.scrollView.contentInset
-        contentInset.bottom = keyboardFrame.size.height + 20
+        contentInset.bottom = keyboardFrame.size.height + CGFloat(Constants.TWENTY)
         scrollView.contentInset = contentInset
     }
     @objc fileprivate func keyboardWillHide(notification:NSNotification) {

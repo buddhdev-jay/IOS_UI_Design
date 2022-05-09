@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class SkipUIButton : BaseCustomUIButton {
+class SkipUIButton : UIButton {
     
     //It is called whenever textfield is added programatically
     override init(frame: CGRect) {
@@ -22,11 +22,14 @@ class SkipUIButton : BaseCustomUIButton {
         setupUiButton()
     }
     
-    override func setupUiButton() {
-        super.setupUiButton()
-        self.setTitle(R.string.localizable.skip(), for: .normal)
-        self.titleLabel?.font =  UIFont(name:"PoppinsRegular",size: 16)
-        self.setTitleColor(.whiteColor, for: .normal)
-    }
+}
+
+// MARK: - Intial Setup
+extension SkipUIButton {
     
+    func setupUiButton() {
+        self.setTitle(R.string.localizable.skip(), for: .normal)
+        self.titleLabel?.font =  R.font.poppinsRegular(size: CGFloat(Constants.SIXTEEN))
+        self.setTitleColor(.gray, for: .normal)
+    }
 }

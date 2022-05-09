@@ -264,8 +264,12 @@
                     <navigationItem key="navigationItem" id="t5E-bg-1CQ">
                         <barButtonItem key="leftBarButtonItem" image="chevron.backward" catalog="system" id="76F-tG-sI8">
                             <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="onClickBackBarButton:" destination="BYZ-38-t0r" id="rHV-K9-GAc"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="PasswordTextField" destination="Tqp-4W-Zh9" id="yEt-lK-LHb"/>
                         <outlet property="confirmPasswordField" destination="0wm-6O-JDM" id="tfK-28-KM6"/>

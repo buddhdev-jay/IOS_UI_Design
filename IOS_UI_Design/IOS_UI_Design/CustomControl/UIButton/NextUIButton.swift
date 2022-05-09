@@ -25,7 +25,7 @@ class NextUIButton : BaseCustomUIButton {
     override func setupUiButton() {
         super.setupUiButton()
         self.setTitle(R.string.localizable.next(), for: .normal)
-        self.titleLabel?.font =  UIFont(name:"PoppinsRegular",size: 16)
+        self.titleLabel?.font =  R.font.poppinsRegular(size: CGFloat(Constants.SIXTEEN))
         self.setTitleColor(.whiteColor, for: .normal)
     }
 

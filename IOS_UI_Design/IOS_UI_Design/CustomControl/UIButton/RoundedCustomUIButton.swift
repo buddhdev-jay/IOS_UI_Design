@@ -26,3 +26,4 @@ class RoundedCustomUIButton : UIButton {
         self.layer.cornerRadius = 6
     }
 }
+

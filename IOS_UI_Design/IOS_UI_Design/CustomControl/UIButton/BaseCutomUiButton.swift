@@ -23,7 +23,8 @@ class BaseCustomUIButton: UIButton {
     }
     
     func setupUiButton() {
-        self.layer.cornerRadius = 16
+        self.layer.cornerRadius = CGFloat(Constants.SIXTEEN)
         self.backgroundColor = UIColor.greenColor
     }
+    
 }

@@ -22,9 +22,16 @@ class LoginTagLineUILabel : BaseCustomUILabel {
         setupLoginTagLineUILabel()
     }
     
+   
+}
+
+// MARK: - Intial Setup
+extension LoginTagLineUILabel {
+    
     func setupLoginTagLineUILabel() {
-        self.text = "Let’s log in. Apply to jobs!"
-        self.font = UIFont.init(name: "PoppinsRegular", size: CGFloat(Constants.FOURTEEN))
+        self.text = R.string.localizable.logInTagLine()
+        self.font = R.font.poppinsRegular(size: CGFloat(Constants.FOURTEEN))
         self.textColor = UIColor.gray
     }
+    
 }

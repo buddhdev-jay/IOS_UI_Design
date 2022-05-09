@@ -23,8 +23,8 @@ class WelcomeUILabel : UILabel {
     }
     
     func setup() {
-        self.text = "Welcome Back 👋"
-        self.font = UIFont.init(name: "Poppins-SemiBold", size: CGFloat(Constants.TWENTYFOUR))
+        self.text = R.string.localizable.welcomeBackTagLine()
+        self.font = R.font.poppinsSemiBold(size: CGFloat(Constants.TWENTYFOUR))
     }
     
 }

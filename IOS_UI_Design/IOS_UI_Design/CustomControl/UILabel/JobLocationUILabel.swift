@@ -12,14 +12,19 @@ import UIKit
 class JobLocationUILabel : BaseCustomUILabel {
     
     @IBInspectable var jobLocationName: String = "" {
-            didSet {
-                JobLocationUILabel()
-            }
+        didSet {
+            JobLocationUILabel()
         }
+    }
+}
+
+// MARK: - Intial Setup
+extension JobLocationUILabel {
     
     func JobLocationUILabel() {
-        self.font = UIFont.init(name: "PoppinsRegular", size: 12)
+        self.font =  R.font.poppinsRegular(size: CGFloat(Constants.TWEVLE))
         self.textColor = UIColor.black
         self.text = jobLocationName
     }
+    
 }

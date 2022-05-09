@@ -24,7 +24,7 @@ class RegisterTagLineUILabel : UILabel {
     
     func setup() {
         self.text = R.string.localizable.registrationTagLine()
-        self.font = UIFont.init(name: "PoppinsRegular", size: CGFloat(Constants.TWENTYFOUR))
+        self.font =  R.font.poppinsRegular(size: CGFloat(Constants.TWENTYFOUR))
         self.textColor = UIColor.gray
     }
 }

@@ -27,6 +27,9 @@ class RegistrationViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
+    @IBAction func onClickBackBarButton(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
 }
 
 
@@ -38,7 +41,7 @@ extension RegistrationViewController {
     }
     
     @IBAction func onClickLogin(_ sender: Any) {
-        if let loginvc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier:"loginViewController" ) as? LoginViewController {
+        if let loginvc = UIStoryboard(name: Constants.MainStroyBoard, bundle: nil).instantiateViewController(withIdentifier:Constants.LoginViewController ) as? LoginViewController {
             self.navigationController?.pushViewController(loginvc, animated: true)
         }
     }
@@ -67,7 +70,7 @@ extension RegistrationViewController {
         var keyboardFrame:CGRect = (userInfo[UIResponder.keyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue
         keyboardFrame = self.view.convert(keyboardFrame, from: nil)
         var contentInset:UIEdgeInsets = self.scrollView.contentInset
-        contentInset.bottom = keyboardFrame.size.height + 20
+        contentInset.bottom = keyboardFrame.size.height + CGFloat(Constants.TWENTY)
         scrollView.contentInset = contentInset
     }
     
