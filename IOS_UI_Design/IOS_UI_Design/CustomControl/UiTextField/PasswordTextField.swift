@@ -25,6 +25,8 @@ extension PasswordTextField {
        keyboardAppearance = .light
        isSecureTextEntry = true
        super.setUpImage(leftImage: Constants.passwordIcon,rightImage: Constants.passwordIconInactive)
+        super.setUpImage(leftImage: "password_icon")
+        setUpButton()
    }
     
 }

@@ -22,9 +22,5 @@ extension BaseCustomUIButton {
     func setupUiButton() {
         self.layer.cornerRadius = CGFloat(Constants.SIXTEEN)
         self.backgroundColor = UIColor.greenColor
-        let height = NSLayoutConstraint(item: self, attribute: NSLayoutConstraint.Attribute.height, relatedBy: NSLayoutConstraint.Relation.equal, toItem: nil, attribute: NSLayoutConstraint.Attribute.notAnAttribute, multiplier: CGFloat(Constants.ONE), constant: CGFloat(Constants.FIFTYSIX))
-        let width = NSLayoutConstraint(item: self, attribute: NSLayoutConstraint.Attribute.width, relatedBy: NSLayoutConstraint.Relation.equal, toItem: nil, attribute: NSLayoutConstraint.Attribute.notAnAttribute, multiplier: CGFloat(Constants.ONE), constant: CGFloat(Constants.THREETWENTYSEVEN))
-        self.addConstraints([height,width])
     }
-    
 }

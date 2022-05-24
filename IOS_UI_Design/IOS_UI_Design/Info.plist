@@ -4,8 +4,10 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
+		<string>CircularStdRegular</string>
+		<string>PoppinsSemiBold</string>
 		<string>PoppinsBold</string>
-		<string>Poppins-Regular</string>
+		<string>PoppinsRegular</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
