@@ -10,6 +10,7 @@ import UIKit
 
 class BaseCustomUIButton: UIButton {
     
+    //It is called whenever textfield is added through Storyboard
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         setupUiButton()

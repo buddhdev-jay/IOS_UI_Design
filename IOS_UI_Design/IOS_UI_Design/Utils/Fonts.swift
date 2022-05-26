@@ -8,7 +8,7 @@
 import Foundation
 
 enum Fonts : String {
-    case poppinsBold = "PoppinsBold"
-    case poppinsRegular = "PoppinsRegular"
-    case poppinsSemiBold = "PoppinsSemiBold"
+    case poppinsBold = "Poppins-Bold"
+    case poppinsRegular = "Poppins-Regular"
+    case poppinsSemiBold = "Poppins-SemiBold"
 }

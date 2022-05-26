@@ -9,7 +9,9 @@ import Foundation
 import UIKit
 
 extension UIColor {
-    static let greenColor: UIColor = UIColor(named: "GreenColor") ?? UIColor.green
-    static let whiteColor: UIColor = UIColor(named: "White") ?? UIColor.white
-    static let grayColor: UIColor = UIColor(named: "Gray") ?? UIColor.white
+    static let greenColor: UIColor = UIColor(named:Constants.greenColor) ?? UIColor.green
+    static let whiteColor: UIColor = UIColor(named: Constants.whiteColor) ?? UIColor.white
+    static let grayColor: UIColor = UIColor(named: Constants.grayColor) ?? UIColor.white
+    static let blackColor: UIColor = UIColor(named: Constants.blackColor) ?? UIColor.black
+    
 }
